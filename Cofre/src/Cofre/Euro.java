@@ -1,15 +1,17 @@
 package Cofre;
 
 public class Euro extends Moeda {
-
-	Euro(String string) {
-		super(string);
 	
-	}
-
+	double Moeda;
 	
-	void info() {
-		System.out.println("Euro: " +dado);		
+public Euro(double cotaE, double cotaD, double cotaR) {
+	super(cotaE, cotaD, cotaR);
+	this.cotaE = cotaE;
+}
+	
+		double calculaValor() {
+			double totalE = 5.40*cotaR;
+			return totalE;
 	}
 
 }

@@ -2,12 +2,18 @@ package Cofre;
 
 	abstract public class Moeda {
 		
-		String dado;
+		double cotaD;
+		double cotaE;
+		double cotaR;
 		
-		Moeda(String d){
-			dado = d;
-	}
+		
+		public Moeda(double cotaD, double cotaE, double cotaR){
+			super();
+			this.cotaD = cotaD;
+			this.cotaE = cotaE;
+			this.cotaR = cotaR;
+		}
 
-	abstract void info();
+	abstract double calculaValor();
 	
 }
